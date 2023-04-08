@@ -16,33 +16,33 @@ namespace EditorHTML
             var option = short.Parse(Console.ReadLine());
             HandleMenuOption(option);
         }
-
-        public static void Draw()
-        {
-            Console.Write("+");
-            for (int i = 0; i <= 30; i++)
-                Console.Write("-");
-
-            Console.Write("+");
-            Console.Write("\n");
-        }
-
         public static void DrawScreen()
         {
-            Draw();
+            Console.Write("+");
+            for (int i = 0; i <= 38; i++)
+            {
+                Console.Write("-");
+            }
+            Console.Write("+");
+            Console.Write("\n");
 
             for (int lines = 0; lines <= 10; lines++)
             {
                 Console.Write("|");
-                for (int i = 0; i <= 30; i++)
+                for (int i = 0; i <= 38; i++)
+                {
                     Console.Write(" ");
-
+                }
                 Console.Write("|");
                 Console.Write("\n");
             }
 
-            Draw();
-
+            Console.Write("+");
+            for (int i = 0; i <= 38; i++)
+            {
+                Console.Write("-");
+            }
+            Console.Write("+");
         }
 
         public static void WriteOptions()
